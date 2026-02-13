@@ -18,26 +18,26 @@ As a consultant with an entrepreneurial background, I recognized the need to val
 ## ⚙️ Methodology & Analytical Process
 I followed a structured 5-step lifecycle to turn raw transactional data into business strategy.
 
-### 1. Data Integrity & Cleaning (Exercise 0)
+### 1. Data Integrity & Cleaning:
 I verified the dataset scale to ensure statistical significance.
 * **Dataset Size:** 2,421 rows and 31 core features.
 * **Cleaning:** Segmented timestamps into hours and days to identify granular patterns.
 
-### 2. Time Trend Analysis (Exercise 1)
+### 2. Time Trend Analysis:
 I analyzed revenue velocity to solve for operational efficiency.
 * **The "Golden Hour":** Revenue peaks at **11:00 AM** (Morning).
 * **Weekly Rhythm:** **Sunday** is the highest-grossing day, identifying the bakery as a weekend destination.
 
 
 
-### 3. Product Market Fit (Exercise 2)
+### 3. Product Market Fit:
 I tested the investor's "Croissant-only" hypothesis against actual sales volume.
 * **The Reality:** **Angbutter** is the dominant bestseller with **3,229 units**, outperforming Croissants (1,049 units) by over 300%.
 * **Beverage Synergy:** **Hot Americanos** are the top-selling drink, acting as a critical "anchor" for breakfast orders.
 
 
 
-### 4. Hourly Sales Dynamics (Exercise 3)
+### 4. Hourly Sales Dynamics:
 I analyzed the "Product Mix" to understand how consumer intent changes throughout the day.
 * **The Pivot:** Food sales show a **decreasing trend** as the day progresses, while drink sales proportions remain more stable.
 * **The Shift:** Drinks make up a higher percentage of the total basket in the afternoon compared to the morning rush.
@@ -48,6 +48,7 @@ I analyzed the "Product Mix" to understand how consumer intent changes throughou
 
 ## 📂 Data Reference
 **Data Source:** Modified version of the Bakery Sales dataset (Kaggle).
+- https://www.kaggle.com/datasets/hosubjeong/bakery-sales/data
 
 **Key Fields Analyzed:**
 * **Temporal:** `datetime`, `day of week`, `hour`.
@@ -72,7 +73,9 @@ I utilized **Google Sheets** and **Excel** to build dynamic models for stakehold
 ---
 
 ## 👤 About the Author
-**Ayushi Gajendra** *Data Analyst | Ex-Startup Co-founder*
+**Ayushi Gajendra** 
+
+*Data Analyst | Ex-Startup Co-founder*
 * **7+ Years** of experience in business operations and strategic growth.
 * I specialize in turning raw data into **clear business decisions**.
 * My goal is to help companies stop "guessing" and start growing using data.
