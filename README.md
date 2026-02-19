@@ -1,81 +1,105 @@
-# 🥖 Strategic Market Analysis: South Korean Bakery Optimization
+# 🥖 Strategic Market Expansion: South Korean Bakery Analysis
 ### *Bridging Stakeholder Intuition with Data-Driven Reality*
 
-![Data Analysis](https://img.shields.io/badge/Analysis-Data%20Analytics-blue)
-![Business Intelligence](https://img.shields.io/badge/Domain-Business%20Intelligence-green)
-![Google Sheets](https://img.shields.io/badge/Tools-Google%20Sheets-success)
-![Excel](https://img.shields.io/badge/Tools-Microsoft%20Excel-orange)
+![Excel](https://img.shields.io/badge/Tools-Excel%20|%20Google%20Sheets-green)
+![Data Analysis](https://img.shields.io/badge/Lifecycle-Full%20Data%20Analysis-blue)
+![Business Intelligence](https://img.shields.io/badge/Domain-Business%20Intelligence-orange)
+![Business Case](https://img.shields.io/badge/Industry-Retail%20&%20F&B-purple)
+
+---
+
+## 🎯 Executive Summary
+
+**The Mission:** Validate a market entry strategy for a South Korean bakery facing stakeholder pressure to prioritize Croissants.
+
+**The Approach:** Managed the full data analysis lifecycle—from cleaning raw Kaggle transaction data to performing a comparative performance analysis of product categories.
+
+**The Pivot:** The data successfully challenged the investor’s assumptions. While Croissants are a stable performer, **Angbutter** — a culturally resonant favorite—emerged as the primary revenue engine, outperforming Croissants by a staggering **307%**.
+
+**The Impact:** Delivered a data-backed recommendation that protects the bakery from an outdated "niche" strategy, ensuring the product mix aligns with actual consumer spending habits.
 
 ---
 
 ## 📖 Background & Business Case
-A South Korean bakery is currently courting a new investor. The investor, influenced by 1980s market trends, is convinced that **Croissants** are the only viable path to success and suggests basing the entire business model around them. 
 
-As a consultant with an entrepreneurial background, I recognized the need to validate this strategy. While stakeholder opinions are vital, basing a business on "gut feeling" introduces significant risk. I conducted this independent market investigation to determine if Croissants are truly the market leader or if a strategic pivot is required to maximize ROI.
+### **The Challenge: Stakeholder Bias vs. Market Reality**
 
----
+A South Korean bakery is currently in high-stakes negotiations with a primary investor. Drawing on market trends from the 1980s, the investor is firmly convinced that Croissants are the ultimate driver of success and has proposed a business model centered exclusively on this single product.
 
-## ⚙️ Methodology & Analytical Process
-I followed a structured 5-step lifecycle to turn raw transactional data into business strategy.
+While stakeholder alignment is critical for securing capital, basing a 2026 business strategy on "gut feeling" and decades-old nostalgia introduces significant financial risk. As the lead analyst, my objective was to move beyond subjective "vibe" checks and provide an independent, evidence-based view of the current market.
 
-### 1. Data Integrity & Cleaning:
-I verified the dataset scale to ensure statistical significance.
-* **Dataset Size:** 2,421 rows and 31 core features.
-* **Cleaning:** Segmented timestamps into hours and days to identify granular patterns.
+### **The Strategy: Data-Driven Validation**
 
-### 2. Time Trend Analysis:
-I analyzed revenue velocity to solve for operational efficiency.
-* **The "Golden Hour":** Revenue peaks at **11:00 AM** (Morning).
-* **Weekly Rhythm:** **Sunday** is the highest-grossing day, identifying the bakery as a weekend destination.
-
-
-
-### 3. Product Market Fit:
-I tested the investor's "Croissant-only" hypothesis against actual sales volume.
-* **The Reality:** **Angbutter** is the dominant bestseller with **3,229 units**, outperforming Croissants (1,049 units) by over 300%.
-* **Beverage Synergy:** **Hot Americanos** are the top-selling drink, acting as a critical "anchor" for breakfast orders.
-
-
-
-### 4. Hourly Sales Dynamics:
-I analyzed the "Product Mix" to understand how consumer intent changes throughout the day.
-* **The Pivot:** Food sales show a **decreasing trend** as the day progresses, while drink sales proportions remain more stable.
-* **The Shift:** Drinks make up a higher percentage of the total basket in the afternoon compared to the morning rush.
-
-
+I conducted this analysis to stress-test the investor's hypothesis. By examining 2,421 transaction records, I aimed to decode the "Sales DNA" of the bakery to determine if a Croissant-centric model would maximize ROI or if a strategic pivot was necessary to capture modern consumer demand.
 
 ---
 
-## 📂 Data Reference
-**Data Source:** Modified version of the Bakery Sales dataset (Kaggle).
-- https://www.kaggle.com/datasets/hosubjeong/bakery-sales/data
+## 🛠️ Phase 1: Problem Definition & Context
+Using the **Rumsfeld Matrix**, I categorized the business requirements to mitigate risk:
 
-**Key Fields Analyzed:**
-* **Temporal:** `datetime`, `day of week`, `hour`.
-* **Financial:** `total` (Total purchase amount in Korean Won).
-* **Inventory:** 31 items including Angbutter, Plain Bread, Americano, Croissants, Tiramisu, etc.
+* **Known-Knowns:** Opening a bakery in the competitive Korean market requires high operational efficiency.
+* **Known-Unknowns:** We knew which items were on the menu, but didn't know the exact customer "Rush Hours" or product-mix preferences.
+* **The Challenge (Stakeholder Bias):** The main investor was convinced Croissants were the only path to success. My objective was to determine if this "gut feeling" aligned with market data.
 
----
-
-## 📊 Live Analysis & Dashboards
-I utilized **Google Sheets** and **Excel** to build dynamic models for stakeholder review.
-
-👉 **[View the Live Google Sheets Analysis here](YOUR_GOOGLE_SHEETS_LINK_HERE)** *(Set to View-Only)*
+**Impact of Domain Knowledge:** Understanding the local Korean preference for "Angbutter" (Pretzel with red beans and gourmet butter) was critical in contextualizing why Western-style staples (Croissants) might not be the #1 performer.
 
 ---
 
-## 💡 Strategic Recommendations
-1. **Inventory Shift:** Increase Angbutter ingredient stock by 50% for weekend service.
-2. **Staffing Pivot:** Maximize labor hours between **10:30 AM – 1:30 PM** to handle the morning rush.
-3. **Menu Bundling:** Create an "Angbutter + Hot Americano" deal to capitalize on high-volume pairings.
-4. **Investor Alignment:** Present these findings to pivot the strategy toward a balanced model that respects the investor's preference while securing profit through top-sellers.
+## ⚙️ Phase 2: Data Preprocessing & Scoping
+The dataset was sourced from Kaggle (modified) and consisted of **2,421 rows** and **31 core features**
+https://www.kaggle.com/datasets/hosubjeong/bakery-sales/data
+
+* **Scoping/Gap Analysis:** The raw `datetime` column was too broad for operational planning.
+* **Feature Engineering:** I engineered four new features—`Year`, `Month`, `Day`, and `Hour`—to perform a granular time-series analysis.
+* **Cleaning:** Removed empty rows to ensure 100% data integrity.
+* **Key Fields Analyzed:**
+  * Temporal: datetime, day of week, hour.
+  * Financial: total (Total purchase amount in Korean Won).
+  * Inventory: 31 items including Angbutter, Plain Bread, Americano, Croissants, Tiramisu, etc.
+
+---
+## ⚙️ Phase 3: Analytical Insights
+
+### 📊 Time Trends & Peak Operations
+* **Objective:** Identify peak hours and high-traffic days to optimize staffing and inventory.
+* **Analysis:** Aggregated total income using `SUMIF` functions across hours and days of the week.
+* **Key Findings:**
+  * **Peak Velocity:** Data revealed a sharp peak at **11:00 AM**. 
+  * **Weekly Rhythm:** Sunday is the highest-grossing day, suggesting the bakery serves as a "weekend destination" rather than just a weekday commuter stop.
+  * **Recommendation:** Align labor shifts to front-load staffing between 10:00 AM and 1:30 PM.
+
+### 📉 Product Popularity & Market Demand
+* **Objective:** Determine the most popular food and beverage items to validate product-market fit.
+* **Analysis:** Calculated total unit sales for all menu items and visualized distribution via bar charts.
+* **Key Findings:**
+    * **Angbutter** is the top-selling food item, significantly outperforming croissants.
+    * **Americanos** are the most popular beverage choice, with a clear preference for hot drinks over cold ones.
+
+### 🔗 Hourly Sales Dynamics
+* **Objective:** Analyze the relationship between food and drink sales to refine afternoon strategies.
+* **Analysis:** Computed the proportion of food versus drink sales per hour to track consumption shifts.
+* **Key Findings:**
+    * Food items consistently make up approximately **90%** of total items sold.
+    * **Sales Decay:** Food sales decrease significantly after the morning rush.
+    * **Resilient Beverages:** Drink sales remain stable, peaking again at **2:00 PM** (The "Coffee Break" surge).
+    * **Strategic Pivot:** The bakery should shift from a "Food Focus" in the morning to a "Beverage Focus" in the afternoon to capture higher margins.
 
 ---
 
-## 👤 About the Author
-**Ayushi Gajendra** 
+## 💡 Phase 4: Interpretation & Recommendations
+Based on the analysis, I provided the following strategic roadmap to the stakeholders:
 
-*Data Analyst | Ex-Startup Co-founder*
-* **7+ Years** of experience in business operations and strategic growth.
-* I specialize in turning raw data into **clear business decisions**.
-* My goal is to help companies stop "guessing" and start growing using data.
+1.  **Inventory Optimization:** Prioritize Angbutter production and stock-up for the 11:00 AM rush to avoid stock-outs on the highest-margin item.
+2.  **Labor Allocation:** Increase staffing for the Sunday peak and the 2:00 PM "Coffee Break" window to handle beverage demand.
+3.  **Pivot Marketing:** Instead of a "Croissant-only" shop, use Croissants as a "Staple" draw while marketing Angbutter as the "Signature" driver
+4.  **Bundle Strategies:** Launch "Americano + Angbutter" morning combos to capitalize on the 11 AM rush.
+
+---
+
+## 🛠️ Technical Skills Demonstrated
+* **Advanced Formulas:** `SUMIF`, `COUNTIF`, and Absolute/Relative Cell Referencing for dynamic modeling.
+* **Statistical Analysis:** Proportional Mix analysis and Time-Series segmentation.
+* **Visualization:** 100% Stacked Bar Charts, Multi-variable Line Charts, and Executive Dashboards.
+* **Frameworks:** Data Analysis Lifecycle, Rumsfeld Matrix, Scoping/Gap Analysis.
+
+
