@@ -32,6 +32,8 @@ While stakeholder alignment is critical for securing capital, basing a 2026 busi
 
 I conducted this analysis to stress-test the investor's hypothesis. By examining 2,421 transaction records, I aimed to decode the "Sales DNA" of the bakery to determine if a Croissant-centric model would maximize ROI or if a strategic pivot was necessary to capture modern consumer demand.
 
+> **Explore the Interactive Data:** [📊 View the Full Google Sheets Analysis & Dashboard](https://docs.google.com/spreadsheets/d/1dqpQsztXSqJCywug1KDRmsEcPBpCiEFiPd6HcRTF4TM/edit?usp=sharing)
+
 ---
 
 ## 🛠️ Phase 1: Problem Definition & Context
@@ -61,6 +63,7 @@ https://www.kaggle.com/datasets/hosubjeong/bakery-sales/data
 ## ⚙️ Phase 3: Analytical Insights
 
 ### 📊 Time Trends & Peak Operations
+
 * **Objective:** Identify peak hours and high-traffic days to optimize staffing and inventory.
 * **Analysis:** Aggregated total income using `SUMIF` functions across hours and days of the week.
 * **Key Findings:**
@@ -74,6 +77,7 @@ https://www.kaggle.com/datasets/hosubjeong/bakery-sales/data
 </p>
 
 ### 📉 Product Popularity & Market Demand
+
 * **Objective:** Determine the most popular food and beverage items to validate product-market fit.
 * **Analysis:** Calculated total unit sales for all menu items and visualized distribution via bar charts.
 * **Key Findings:**
@@ -83,9 +87,10 @@ https://www.kaggle.com/datasets/hosubjeong/bakery-sales/data
 <p align="center">
   <img src="Food Item Popularity.png" width="45%" /> 
   <img src="Beverage Popularity.png" width="45%"/>
-</p
+</p>
  
 ### 🔗 Hourly Sales Dynamics
+
 * **Objective:** Analyze the relationship between food and drink sales to refine afternoon strategies.
 * **Analysis:** Computed the proportion of food versus drink sales per hour to track consumption shifts.
 * **Key Findings:**
@@ -102,6 +107,7 @@ https://www.kaggle.com/datasets/hosubjeong/bakery-sales/data
 ---
 
 ## 💡 Phase 4: Interpretation & Recommendations
+
 Based on the analysis, I provided the following strategic roadmap to the stakeholders:
 
 1.  **Inventory Optimization:** Prioritize Angbutter production and stock-up for the 11:00 AM rush to avoid stock-outs on the highest-margin item.
@@ -111,10 +117,24 @@ Based on the analysis, I provided the following strategic roadmap to the stakeho
 
 ---
 
-## 🛠️ Technical Skills Demonstrated
-* **Advanced Formulas:** `SUMIF`, `COUNTIF`, and Absolute/Relative Cell Referencing for dynamic modeling.
-* **Statistical Analysis:** Proportional Mix analysis and Time-Series segmentation.
-* **Visualization:** 100% Stacked Bar Charts, Multi-variable Line Charts, and Executive Dashboards.
-* **Frameworks:** Data Analysis Lifecycle, Rumsfeld Matrix, Scoping/Gap Analysis.
+## 🛠️ Technical Skills & Tooling
+
+### **Core Competencies**
+* **Platform:** Microsoft Excel & Google Sheets
+* **Advanced Data Aggregation:** Orchestrated complex datasets using `SUMIFS` and `COUNTIFS` with absolute and relative cell referencing for dynamic, error-free modeling.
+* **Statistical Scaling:** Factored large-scale currency figures (KRW) by 1,000 to optimize data readability and dashboard aesthetics.
+* **Temporal Modeling:** Performed time-series segmentation to identify high-velocity sales windows and operational "rush hours."
+
+### **Data Visualization & BI**
+* **Executive Dashboards:** Designed clean, gridline-free reporting interfaces focused on stakeholder "Action Items."
+* **Advanced Charting:**
+    * **100% Stacked Column Charts** for visualizing Product Mix and category proportions.
+    * **Multi-variable Line Charts** to track "Sales Decay" vs. "Resilient Beverages."
+    * **Comparative Bar Charts** for direct benchmarking (e.g., Angbutter vs. Croissants).
+
+### **Methodological Frameworks**
+* **Risk Mitigation:** Applied the **Rumsfeld Matrix** (Known-Knowns vs. Unknowns) to define project scope and manage stakeholder bias.
+* **Business Intelligence:** Managed the **Full Data Analysis Lifecycle**, moving from raw Kaggle data to a finalized strategic roadmap.
+* **Feature Engineering:** Transformed raw `datetime` strings into granular time-based features (`Hour`, `Day of Week`) to unlock operational insights.
 
 
