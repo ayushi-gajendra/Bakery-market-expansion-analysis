@@ -14,7 +14,7 @@
 
 **The Approach:** Managed the full data analysis lifecycle—from cleaning raw Kaggle transaction data to performing a comparative performance analysis of product categories.
 
-**The Pivot:** The data successfully challenged the investor’s assumptions. While Croissants are a stable performer, **Angbutter** — a culturally resonant favorite—emerged as the primary revenue engine, outperforming Croissants by a staggering **307%**.
+**The Pivot:** The data successfully challenged the investor’s assumptions. While Croissants are a stable performer, **Angbutter** — a culturally resonant favorite—emerged as the primary revenue engine, outperforming Croissants by a staggering **208%**.
 
 **The Impact:** Delivered a data-backed recommendation that protects the bakery from an outdated "niche" strategy, ensuring the product mix aligns with actual consumer spending habits.
 
